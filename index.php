@@ -43,6 +43,7 @@ $errorMsgReg="Username or Email already exists.";
 }
 ?>
 
+<link href="css/main.css" rel="stylesheet">
 <div id="signup">
 <h3>Registro</h3>
 <form method="post" action="" name="signup">
