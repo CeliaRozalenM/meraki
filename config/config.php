@@ -8,8 +8,7 @@ define('DB_DATABASE', 'meraki');
 define("BASE_URL", "http://localhost/meraki/");
 
 
-function getDB() 
-{
+function getDB(){
 $dbhost=DB_SERVER;
 $dbuser=DB_USERNAME;
 $dbpass=DB_PASSWORD;
@@ -19,9 +18,7 @@ $dbConnection = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
 $dbConnection->exec("set names utf8");
 $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 return $dbConnection;
-}
-catch (PDOException $e) {
+}catch (PDOException $e) {
 echo 'Connection failed: ' . $e->getMessage();
 }
-
 }

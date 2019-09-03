@@ -15,7 +15,7 @@ if($uid){
 $url=BASE_URL.'home.php';
 header("Location: $url"); 
 }else{
-$errorMsgLogin="Please check login details.";
+$errorMsgLogin="Comprueba los datos introducidos";
 }
 }
 }
@@ -37,7 +37,7 @@ if($uid){
 $url=BASE_URL.'home.php';
 header("Location: $url"); 
 }else{
-$errorMsgReg="Username or Email already exists.";
+$errorMsgReg="Usuario o Email ya en uso";
 }
 }
 }

@@ -1,6 +1,5 @@
 <?php 
-class userClass
-{
+class userClass{
 /* User Login */
 public function userLogin($usernameEmail,$password){
 try{
