@@ -7,12 +7,22 @@ define('DB_PASSWORD', '');
 define('DB_DATABASE', 'meraki');
 define("BASE_URL", "http://localhost/meraki/");
 
+<?php
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
+?>
 
 function getDB(){
-    $dbhost=DB_SERVER;
-    $dbuser=DB_USERNAME;
-    $dbpass=DB_PASSWORD;
-    $dbname=DB_DATABASE;
+    $dbhost=$server;
+    $dbuser=$username;
+    $dbpass=$password;
+    $dbname=$db;
 try {
     $dbConnection = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass); 
     $dbConnection->exec("set names utf8");
