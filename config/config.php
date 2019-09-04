@@ -2,21 +2,20 @@
 session_start();
 /* DATABASE CONFIGURATION */
 
+// Use to connect to ClearDB 
+// $url = getenv("CLEARDB_DATABASE_URL");
 
-$url = getenv("CLEARDB_DATABASE_URL");
+// $server = $url["host"];
+// $username = $url["user"];
+// $password = $url["pass"];
+// $db = substr($url["path"], 1);
+//
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
-
-// $conn = new mysqli($server, $username, $password, $db);
-
-define('DB_SERVER', $server);
-define('DB_USERNAME', $username);
-define('DB_PASSWORD', $password);
-define('DB_DATABASE', $db);
-define("BASE_URL", "http://https://polar-river-28964.herokuapp.com/");
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'meraki');
+define("BASE_URL", "http://localhost/meraki/");
 
 function getDB(){
     $dbhost=DB_SERVER;

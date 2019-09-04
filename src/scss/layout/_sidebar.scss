@@ -1,11 +1,13 @@
 .sidebar {
+  height: 100%;
+  box-shadow: 2px 4px 30px rgba(38, 160, 221, 0.15);
   .tab {
     &:last-child {
       border: none;
     }
     padding: 20px;
     border-bottom: 1px solid rgba(38, 160, 221, 0.25);
-    font-size: $fontsize_title;
+    font-size: $fontsize_big;
     .profile {
       width: 50px;
       height: 50px;
@@ -22,14 +24,7 @@
       margin-top: 25px;
       li {
         list-style: none;
-        &:before {
-          content: "";
-          padding: 15px;
-          margin-right: 10px;
-          background-image: url(#{$image_dir}/star.svg);
-          background-position: center;
-          background-repeat: no-repeat;
-        }
+          @include star;
       }
     }
   }

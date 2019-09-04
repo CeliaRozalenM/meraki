@@ -1,0 +1,105 @@
+.info {
+  padding: 20px;
+  .data {
+      h1 {
+        font-size: $fontsize_title;
+        font-weight: $fontweigth_normal;
+        margin: 0 0 12px 0;
+      }
+      margin-left: 20px;
+      float: left;
+      .progress-bar{
+          height: 25px;
+          border-radius: 100px;
+          background-color: #C4C4C4;
+      }
+  }
+  .blocks{
+      margin: 45px 20px 0 20px;
+      float: left;
+  }
+  .avatar {
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: #fff8f2;
+    border: 3px solid #ea627d;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  .achievment{
+      span{
+        @include star;
+      }
+  }
+  .msg{
+    border: 1px solid $blue;
+    padding: 30px 40px;
+    margin-top: 10px; 
+    p{
+      margin: 0 30px 0 0;
+    }
+    span{
+        font-weight: $fontweigth_medium;
+    }
+  }
+}
+.tabs{
+  .content_HOLA2{
+    display: none;
+  }
+  margin-top: 20px;
+  .tab{
+    cursor: pointer;
+    font-size: $fontsize_title;
+    background: #BCE2F4;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: $fontweigth_normal;
+    color:$blue;
+    p{
+      margin:40px 0;
+    }
+    &--selected{
+      color:$white;
+      background-color: $blue;
+    }
+  }
+  .task-block{
+    padding: 30px;
+    .task {
+      padding: 20px;
+      p {
+        margin: 0 0 65px 0;
+      }
+      > div {
+        padding: 20px;
+        min-height: 120px;
+        border: 4px solid $red;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+      .status{
+        width: 50px;
+        height: 50px;
+        background: $red;
+        border-radius:100px;
+        float: right;
+        position: relative;
+        top: -45px;
+      }
+    }
+    
+  }
+}
+.photos{
+  padding: 30px;
+  .photo{
+    padding: 20px;
+    div{
+      border-radius: 5px;
+      border: 4px solid $red;
+      min-height: 200px;
+    }
+  }
+}

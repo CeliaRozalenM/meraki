@@ -22,12 +22,13 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('frontend-scripts', function() {
+gulp.task('scripts', function() {
     gulp.src([
-        // './src/js/vendors/jquery/jquery-3.2.1.js',
+         './src/js/frontend/events.js',
+         './src/js/frontend/functions.js',
     ])
         .pipe(sourcemaps.init())
-        .pipe(concat('fe.js'))
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write('.'))
@@ -37,6 +38,6 @@ gulp.task('frontend-scripts', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    // gulp.watch('./src/js/frontend/**/*.js', ['frontend-scripts']);
+    gulp.watch('./src/js/**/*.js', ['scripts']);
     gulp.watch('./src/scss/**/*.scss', ['styles']);
 });

@@ -10,3 +10,14 @@
         + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+@mixin star {
+  &:before {
+    content: "";
+    padding: 15px;
+    margin-right: 10px;
+    background-image: url(#{$image_dir}/star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
