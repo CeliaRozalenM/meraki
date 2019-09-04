@@ -12,7 +12,7 @@ if (!empty($_POST['loginSubmit'])) {
     if (strlen(trim($usernameEmail)) > 1 && strlen(trim($password)) > 1) {
         $uid = $userClass->userLogin($usernameEmail, $password);
         if ($uid) {
-            $url = BASE_URL . 'home.php';
+            $url = BASE_URL . '/pages/home.php';
             header("Location: $url");
         } else {
             $errorMsgLogin = "Comprueba los datos introducidos";
@@ -34,7 +34,7 @@ if (!empty($_POST['signupSubmit'])) {
     if ($username_check && $email_check && $password_check && strlen(trim($name)) > 0) {
         $uid = $userClass->userRegistration($username, $password, $email, $name);
         if ($uid) {
-            $url = BASE_URL . 'home.php';
+            $url = BASE_URL . '/pages/home.php';
             header("Location: $url");
         } else {
             $errorMsgReg = "Usuario o Email ya en uso";

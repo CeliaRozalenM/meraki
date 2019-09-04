@@ -1,6 +1,6 @@
 <?php
-include('config/config.php');
-include('log/session.php');
+include('../config/config.php');
+include('../log/session.php');
 $userDetails=$userClass->userDetails($session_uid);
 ?>
 
