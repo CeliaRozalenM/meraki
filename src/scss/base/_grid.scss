@@ -2,8 +2,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+//   padding-left: 15px;
+//   padding-right: 15px;
   &.fullwidth{
 	  width:100%;
   }
@@ -31,24 +31,12 @@
   }
 }
 
-.container--fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 @for $i from 1 through 12 {
     .col--xs--#{$i}, .col--sm--#{$i}, .col--md--#{$i}, .col--lg--#{$i} {
 	  position: relative;
 	  min-height: 1px;
-	  padding-left: 15px;
-	  padding-right: 15px;
+	//   padding-left: 15px;
+	//   padding-right: 15px;
     }
 }
 
@@ -569,7 +557,7 @@
 
 @include mediaquery(lg) {
 	@for $i from 1 through 12 {
-		.col--sm--#{$i}{
+		.col--lg--#{$i}{
 			float: left;
 		}
 	}

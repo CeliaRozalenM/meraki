@@ -2,6 +2,8 @@
 
 $white: #ffffff;
 $black: #000000;
+$red: #EA627D;
+$blue: #26A0DD;
 
 // Breakpoints
 
@@ -14,6 +16,17 @@ $breakpoints: (
 
 // Fonts
 
-$font_name: 'font_name';
+$font_name: 'Work Sans', sans-serif;
+
+$fontweigth_semibold: 600;
+$fontweigth_medium: 500;
+$fontweigth_light: 300;
+
+$fontsize_title: 18px;
+$fontsize_general: 16px;
+
+
+//IMG URL
+$image_dir: "../img/";
 
 

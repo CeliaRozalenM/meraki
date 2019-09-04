@@ -1,0 +1,36 @@
+.sidebar {
+  .tab {
+    &:last-child {
+      border: none;
+    }
+    padding: 20px;
+    border-bottom: 1px solid rgba(38, 160, 221, 0.25);
+    font-size: $fontsize_title;
+    .profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 3px solid $red;
+      margin-top: 20px;
+    }
+    .floor {
+      font-weight: $fontweigth_semibold;
+    }
+    .msg {
+      font-size: $fontsize_general;
+      padding: 0;
+      margin-top: 25px;
+      li {
+        list-style: none;
+        &:before {
+          content: "";
+          padding: 15px;
+          margin-right: 10px;
+          background-image: url(#{$image_dir}/star.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

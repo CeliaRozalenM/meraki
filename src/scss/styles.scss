@@ -5,15 +5,18 @@
 
 // BASE
 @import 'base/fonts';
-@import 'base/html';
+@import 'base/reset';
 @import 'base/grid';
-
-// COMPONENTS
 
 // LAYOUT
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/sidebar';
 
 //VENDORS
 
+//PAGES
+@import 'pages/building';
 
+//COMPONENTS
+@import 'components/button';
