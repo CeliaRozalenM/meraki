@@ -1,4 +1,6 @@
 .sidebar {
+  position: fixed;
+    right: 0;
   height: 100%;
   box-shadow: 2px 4px 30px rgba(38, 160, 221, 0.15);
   .tab {
@@ -25,6 +27,19 @@
       li {
         list-style: none;
           @include star;
+      }
+    }
+    &.logout{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: $black;
+      span{
+        padding: 20px;
+        margin-right: 10px;
+        background-image: url(../img/logout.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
       }
     }
   }

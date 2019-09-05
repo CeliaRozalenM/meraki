@@ -12,4 +12,10 @@
             <li >¡Acabado Sprint 1!</li>
         </ul>
     </div>
+    <a href="<?php echo BASE_URL; ?>/../log/logout.php">
+        <div class="tab logout">
+            <span></span>
+            Cerrar sesión
+        </div>
+    </a>
 </div>

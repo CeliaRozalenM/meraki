@@ -6,7 +6,7 @@ include '../layout/header.php';
             <div class="row">
                 <nav>
                     <div class="name">NOMBRE EDIFICIO</div>
-                    <div class="profile"></div>
+                    <a href="profile.php"><div class="profile"></div></a>
                 </nav>
             </div>
             <div class="row">
