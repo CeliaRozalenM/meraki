@@ -64,10 +64,41 @@ class userClass
     {
         try {
             $db = getDB();
-            $stmt = $db->prepare("SELECT email,username,name FROM users WHERE uid=:uid");
+            $stmt = $db->prepare("SELECT email,username,name,profile_pic, color_user FROM users WHERE uid=:uid");
             $stmt->bindParam("uid", $uid, PDO::PARAM_INT);
             $stmt->execute();
             $data = $stmt->fetch(PDO::FETCH_OBJ); //User data
+            return $data;
+        } catch (PDOException $e) {
+            echo '{"error":{"text":' . $e->getMessage() . '}}';
+        }
+    }
+
+    public function getUserPhotos($uid)
+    {
+        try {
+            $db = getDB();
+            $stmt = $db->prepare("SELECT img_name FROM images WHERE img_user=:img_user");
+            $stmt->bindParam("img_user", $uid, PDO::PARAM_INT);
+            $stmt->execute();
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $data []= $row;
+            }
+            return $data;
+        } catch (PDOException $e) {
+            echo '{"error":{"text":' . $e->getMessage() . '}}';
+        }
+    }
+
+    public function allUsersProfilePic()
+    {
+        try {
+            $db = getDB();
+            $stmt = $db->prepare("SELECT profile_pic,color_user FROM users ");
+            $stmt->execute();
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $data []= $row;
+            }
             return $data;
         } catch (PDOException $e) {
             echo '{"error":{"text":' . $e->getMessage() . '}}';

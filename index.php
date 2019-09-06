@@ -3,6 +3,7 @@ include "config/config.php";
 include 'class/userClass.php';
 $userClass = new userClass();
 
+
 $errorMsgReg = '';
 $errorMsgLogin = '';
 /* Login Form */
@@ -15,7 +16,7 @@ if (!empty($_POST['loginSubmit'])) {
             $url = BASE_URL . '/pages/home.php';
             header("Location: $url");
         } else {
-            $errorMsgLogin = "Datos introducidos erróneos";
+            $errorMsgLogin = "Datos incorrectos introducidos";
         }
     }
 }
@@ -49,7 +50,7 @@ if (!empty($_POST['signupSubmit'])) {
 ?>
 
 <link href="css/main.css" rel="stylesheet">
-<div id="signup">
+<!-- <div id="signup">
 <h3>Registro</h3>
 <form method="post" action="" name="signup">
 <label>Nombre</label>
@@ -63,7 +64,7 @@ if (!empty($_POST['signupSubmit'])) {
 <div class="errorMsg"><?php echo $errorMsgReg; ?></div>
 <input type="submit" class="button" name="signupSubmit" value="Registrar">
 </form>
-</div>
+</div> -->
 
 <div id="login">
 <h3>Login</h3>
