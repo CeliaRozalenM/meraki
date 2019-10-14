@@ -1,0 +1,38 @@
+.login,#signup{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    h1{
+        color:$blue;
+        font-size: 40px;
+    }
+    form{
+        box-shadow: 0 4px 10px rgba(38,160,221,.1);
+        padding: 25px;
+        text-align: left;
+        background: #ffffff;
+        width: 300px;
+        border-radius: 5px;
+        label{
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: block;
+        }
+        input{
+            border: solid 1px #666666;padding: 10px;
+            border: solid 1px #BDC7D8; margin-bottom: 20px;
+            display: block;margin-bottom: 5px;width: 100%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .button{
+            margin: 0;
+        }
+    }
+}
+
+.errorMsg{color: #cc0000;margin-bottom: 10px}
+
+    

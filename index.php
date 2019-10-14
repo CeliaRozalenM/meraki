@@ -16,13 +16,10 @@ if (!empty($_POST['loginSubmit'])) {
             $url = BASE_URL . '/pages/home.php';
             header("Location: $url");
         } else {
-            $errorMsgLogin = "Datos incorrectos introducidos";
+            $errorMsgLogin = "Datos introducidos incorrectos ";
         }
     }
 }
-
-
-
 
 /* Signup Form */
 if (!empty($_POST['signupSubmit'])) {
@@ -49,31 +46,27 @@ if (!empty($_POST['signupSubmit'])) {
 }
 ?>
 
-<link href="css/main.css" rel="stylesheet">
-<!-- <div id="signup">
-<h3>Registro</h3>
-<form method="post" action="" name="signup">
-<label>Nombre</label>
-<input type="text" name="nameReg" autocomplete="off" />
-<label>Email</label>
-<input type="text" name="emailReg" autocomplete="off" />
-<label>Username</label>
-<input type="text" name="usernameReg" autocomplete="off" />
-<label>Password</label>
-<input type="password" name="passwordReg" autocomplete="off"/>
-<div class="errorMsg"><?php echo $errorMsgReg; ?></div>
-<input type="submit" class="button" name="signupSubmit" value="Registrar">
-</form>
-</div> -->
 
-<div id="login">
-<h3>Login</h3>
-<form method="post" action="" name="login">
-<label>Username or Email</label>
-<input type="text" name="usernameEmail" autocomplete="off" />
-<label>Password</label>
-<input type="password" name="password" autocomplete="off"/>
-<div class="errorMsg"><?php echo $errorMsgLogin; ?></div>
-<input type="submit" class="button" name="loginSubmit" value="Login">
-</form>
-</div>
+<link href="css/styles.min.css" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meraki</title>
+</head>
+<body class="building">
+    <div class="login">
+        <h1>Meraki</h1>
+        <form method="post" action="" name="login">
+        <label>Username or Email</label>
+        <input type="text" name="usernameEmail" autocomplete="off" />
+        <label>Password</label>
+        <input type="password" name="password" autocomplete="off"/>
+        <div class="errorMsg"><?php echo $errorMsgLogin; ?></div>
+        <input type="submit" class="button" name="loginSubmit" value="LOGIN">
+        </form>
+    </div>
+</body>
+</html>
