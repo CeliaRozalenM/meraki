@@ -2,14 +2,17 @@
 
 An application developed with **PHP** and **MySQL** to gamify remote work by creating intercommunication adding micro rewards.
 
-👩‍🏫 [Presented](https://docs.google.com/presentation/d/1EvMP3VfYHfOZYA8KgTVCzFnTBpAA088Zvr5BvJKXEpw/edit?usp=sharing) at MorcillaConf Hackaton.
+👩‍🏫 [Presented](https://docs.google.com/presentation/d/e/2PACX-1vS9eRBAuHjEjaANeON7onaAzASTURCjTPdO3nQeaX3RQEk34rFfTNi2bmOq3awuzTxAvfA2p8rXflnX/pub?start=false&loop=false&delayms=3000) at MorcillaConf Hackaton 2019.
+
+Meraki: *in modern greek, make something with love and creativity, engaging your soul in it*.
+
 
 ![Meraki](/presentation.png "Meraki")
 
 ## Features
 
-- Mark tasks as done to complete the project and finish the building.
-- When a sprint is completed you receive a reward and you can share it with you're mates by adding a photo.
+- Mark tasks as done ✅ to complete the project and finish the building.
+- When a sprint is completed you receive a reward 🎁 and you can share it with you're mates by adding a photo 🤳
 - Designed with ❤️ using Figma.
 - Deployed in Heroku with ClearDB MySQL
 

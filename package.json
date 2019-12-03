@@ -27,5 +27,8 @@
     "js-yaml": ">=3.13.1",
     "minimatch": ">=3.0.2",
     "lodash": ">=4.17.13"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
